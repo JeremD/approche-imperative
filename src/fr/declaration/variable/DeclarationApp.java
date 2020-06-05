@@ -16,14 +16,19 @@ public class DeclarationApp {
 	int monInt = 632;
 	long monLong = 140000;
 	
-	float monFloat = 3;
+	float monFloat = 3.36F;
 	double monDouble = 6.55555555555;
 	
 	char monChar = 'z';
-	String monString = "hello world!";
 	boolean monBool = true;
 	
-	System.out.println();
+	String monString = "hello world!";
+	
+	
+	//Test affichage
+	String randomString = "Voici le résultat d’un calcul : \n1+5=6";
+	System.out.println(randomString);
+	
 	}
 
 }
