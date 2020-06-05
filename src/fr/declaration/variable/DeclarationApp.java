@@ -23,8 +23,7 @@ public class DeclarationApp {
 	boolean monBool = true;
 	
 	String monString = "hello world!";
-	
-	
+		
 	//Test affichage
 	String randomString = "Voici le résultat d’un calcul : \n1+5=6";
 	System.out.println(randomString);
