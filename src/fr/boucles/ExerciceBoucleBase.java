@@ -10,7 +10,18 @@ public class ExerciceBoucleBase {
 	for (int i = 0; i < numberSimple.length;  i++) {
 		System.out.println(numberSimple[i]);
 	}
-		
+	
+	//line break
+	System.out.println("\n");
+	
+	//Affichage du prénom
+	String monNom = "Jérémy D.";
+	
+	for (int i = 0; i <= 20; i++) {
+		System.out.println(monNom);
+	} 
+	
+	
 	}
 	
 }
