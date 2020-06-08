@@ -1,7 +1,7 @@
 /**
  * 
  */
-package fr;
+package fr.algorithmie;
 
 /**
  * Exercices en auto-formation
