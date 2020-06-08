@@ -3,7 +3,7 @@ package fr.algorithmie;
 /**
  * Exercices en auto-formation
  * 
- * EXERCICE 4 RECHERCHEMAX
+ * EXERCICE 5 RECHERCHEMIN
  * @author Jeremy
  *
  */
@@ -20,7 +20,7 @@ public class RechercheMin {
 	// Initialisation valeur min
 	int valueMin = array[0];
 	
-	// Recheche du plus petit élément du tableau
+	// Recherche du plus petit élément du tableau
 	for (int i = 0; i < array.length; i++) {
 		if (array[i] < valueMin) {
 			valueMin = array[i];
