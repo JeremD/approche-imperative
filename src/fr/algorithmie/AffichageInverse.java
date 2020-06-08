@@ -1,6 +1,3 @@
-/**
- * 
- */
 package fr.algorithmie;
 
 /**
@@ -24,7 +21,6 @@ public class AffichageInverse {
 		/*
 		 * Affichage du tableau
 		*/
-		
 		System.out.println("Résultat du tableau :");
 		for (int i = 0; i < array.length; i++) {
 			System.out.println(array[i]);
@@ -35,7 +31,6 @@ public class AffichageInverse {
 		/*
 		 * Affichage inversé du tableau
 		*/
-		
 		System.out.println("Résultat inversé du tableau :");
 		
 		for (int i = array.length-1; i >= 0; i--) {
@@ -47,7 +42,6 @@ public class AffichageInverse {
 		/*
 		 * Copie du tableau
 		*/
-		
 		// Initialisation du tableau destinataire
 		int[] arrayCopy = new int[array.length];
 		
