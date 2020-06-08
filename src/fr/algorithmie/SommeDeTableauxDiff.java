@@ -20,11 +20,12 @@ public class SommeDeTableauxDiff {
 		// Second tableau
 		int[] array2 = {-1, 12, 17, 14, 5, -9, 0, 18};
 		
-		// Somme des deux tableaux
+		/*
+		 *  Somme des deux tableaux
+		 */
 		int[] arrayTotal = new int[array1.length];
 		
 		for (int i = 0; i < array1.length ; i++) {
-			
 			// Résolution du conflit quand un tableau est plus petit que l'autre
 			int value1 = (i < array1.length) ? array1[i] : 0;
 			int value2 = (i < array2.length) ? array2[i] : 0;
