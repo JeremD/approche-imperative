@@ -10,7 +10,7 @@ package fr.algorithmie;
 public class InversionContenu {
 
 	/**
-	 * main
+	 * @param args
 	 */
 	public static void main(String[] args) {
 		
