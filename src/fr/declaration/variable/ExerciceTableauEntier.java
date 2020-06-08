@@ -1,3 +1,4 @@
+package fr.declaration.variable;
 
 public class ExerciceTableauEntier {
 /**
