@@ -1,6 +1,11 @@
 package fr.algorithmie;
 
 /**
+ * 
+ * Exercices en auto-formation
+ * 
+ * EXERCICE Tri par SÃ©lection
+ * 
  * @author Jeremy
  *
  */
@@ -10,43 +15,52 @@ public class TriParSelection {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
+
 		// Tableau source
-		int[] array2 = {3, -8, 17, 5, -1, 4, 0, 6, 2, 11, -5, -4, 8};
-		
-		// Tableau tri par sélection
+		int[] array2 = { 3, -8, 17, 5, -1, 4, 0, 6, 2, 11, -5, -4, 8 };
+
+		// Tableau tri par sÃ©lection
 		int[] trieSelection = new int[array2.length];
-		
+
 		/*
 		 * Parcours du tableau
-		 * @valeur1 -> index de première valeur
-		 * @valeur2 -> index de la valeur suivante
+		 * 
+		 * valeurSource -> index premiÃ¨re valeur
+		 * 
+		 * valeurTrie -> index valeur suivante
 		 */
-		for (int valeur1 = 0; valeur1 < array2.length; valeur1++) {
-			
-			// Index de sélection
-			int indexSelect = valeur1;
-			
-			for (int valeur2 = valeur1 + 1; valeur2 < array2.length; valeur2++) {
-				// Comparaison des deux valeurs puis sélection de la plus petite
-				if (array2[valeur2] < array2[indexSelect]) {
-					indexSelect = valeur2;
+		for (int valeurSource = 0; valeurSource < array2.length; valeurSource++) {
+
+			// Index de sÃ©lection
+			int indexSelect = valeurSource;
+
+			for (int valeurTrie = valeurSource + 1; valeurTrie < array2.length; valeurTrie++) {
+				// Comparaison des deux valeurs puis sÃ©lection de la plus petite dans index
+				// sÃ©lection
+				if (array2[valeurTrie] < array2[indexSelect]) {
+					indexSelect = valeurTrie;
 				}
 			}
-			
+
 			/*
-			 *  Tri du tableau
+			 * Tri du tableau
 			 */
-			int valueSelect = array2[indexSelect]; // valeur comparée précédemment
-			array2[indexSelect] = array2[valeur1]; // valeur dans l'index
-			trieSelection[valeur1] = valueSelect; // écriture dans le tableau de sélection
+			// Valeur comparÃ©e prÃ©cÃ©demment
+			int valueSelect = array2[indexSelect];
+
+			// Insertion valeur dans l'index sÃ©lection
+			array2[indexSelect] = array2[valeurSource];
+
+			// Ecriture valeur sÃ©lection dans tableau sÃ©lection
+			trieSelection[valeurSource] = valueSelect;
 		}
-		
-		System.out.println("Trie par sélection : ");
+
+		// Affichage tableau de sÃ©lection
+		System.out.println("Trie par sÃ©lection : ");
 		for (int i = 0; i < trieSelection.length; i++) {
 			System.out.println(trieSelection[i]);
 		}
-		
+
 	}
 
 }
