@@ -16,14 +16,14 @@ public class TriParSelection {
 	 */
 	public static void main(String[] args) {
 
-		// Tableau source
+		// Premier tableau à trier
 		int[] array2 = { 3, -8, 17, 5, -1, 4, 0, 6, 2, 11, -5, -4, 8 };
 
-		// Tableau tri par sélection de même taille que la source
+		// Second tableau de tri de même taille que la source
 		int[] trieSelection = new int[array2.length];
 
 		/*
-		 * Parcours du tableau source
+		 * Parcours du tableau à trier
 		 * 
 		 * indexActuel -> index première valeur
 		 * 
@@ -43,7 +43,7 @@ public class TriParSelection {
 			}
 
 			/*
-			 * Tri de tableau
+			 * Réorganisation du premier tableau dans le scond
 			 */
 			// Elément le plus petit trouvé
 			int valueSelect = array2[indexSelect];
