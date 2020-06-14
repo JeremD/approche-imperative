@@ -3,7 +3,7 @@ package fr.algorithmie;
 /**
  * Exercices en auto-formation
  * 
- * EXERCICE Inversion contenu
+ * EXERCICE Inversion Contenu
  * 
  * @author Jeremy
  *
