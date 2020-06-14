@@ -3,7 +3,8 @@ package fr.algorithmie;
 /**
  * Exercices en auto-formation
  * 
- * EXERCICE 1 AFFICHAGEINVERSE
+ * EXERCICE Affichage invers√©
+ * 
  * @author Jeremy
  *
  */
@@ -13,41 +14,34 @@ public class AffichageInverse {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
+
 		// Initialisation du tableau
-		int[] array = {1, 15, -3, 0, 8, 7, 4, -2, 28, 7, -1, 17, 2, 3, 0, 14, -4};
-		
-		
-		/*
-		 * Affichage du tableau
-		*/
-		System.out.println("RÈsultat du tableau :");
+		int[] array = { 1, 15, -3, 0, 8, 7, 4, -2, 28, 7, -1, 17, 2, 3, 0, 14, -4 };
+
+		// Affichage du tableau
+		System.out.println("R√©sultat du tableau :");
 		for (int i = 0; i < array.length; i++) {
 			System.out.println(array[i]);
 		}
 		System.out.println("\n");
-		
-		
-		/*
-		 * Affichage inversÈ du tableau
-		*/
-		System.out.println("RÈsultat inversÈ du tableau :");
-		
-		for (int i = array.length-1; i >= 0; i--) {
+
+		// Affichage invers√©e du tableau
+		System.out.println("R√©sultat invers√© du tableau :");
+
+		for (int i = array.length - 1; i >= 0; i--) {
 			System.out.println(array[i]);
 		}
 		System.out.println("\n");
-		
-		
+
 		/*
 		 * Copie du tableau
-		*/
-		// Initialisation du tableau destinataire
+		 */
+		// Initialisation du second tableau arrayCopy
 		int[] arrayCopy = new int[array.length];
-		
+
 		// Copie du tableau array vers arrayCopy
-		System.out.println("RÈsultat du tableau copiÈ :");
-		
+		System.out.println("R√©sultat du tableau copi√© :");
+
 		for (int i = 0; i < array.length; i++) {
 			arrayCopy[i] = array[i];
 			System.out.println(arrayCopy[i]);
