@@ -25,20 +25,19 @@ public class TriParSelection {
 		/*
 		 * Parcours du tableau
 		 * 
-		 * valeurSource -> index première valeur
+		 * indexSource -> index première valeur
 		 * 
-		 * valeurTrie -> index valeur suivante
+		 * indexTrie -> index valeur suivante
 		 */
-		for (int valeurSource = 0; valeurSource < array2.length; valeurSource++) {
+		for (int indexSource = 0; indexSource < array2.length; indexSource++) {
 
 			// Index de sélection
-			int indexSelect = valeurSource;
+			int indexSelect = indexSource;
 
-			for (int valeurTrie = valeurSource + 1; valeurTrie < array2.length; valeurTrie++) {
-				// Comparaison des deux valeurs puis sélection de la plus petite dans index
-				// sélection
-				if (array2[valeurTrie] < array2[indexSelect]) {
-					indexSelect = valeurTrie;
+			for (int indexTrie = indexSource + 1; indexTrie < array2.length; indexTrie++) {
+				// Comparaison des deux valeurs puis sélection de la plus petite dans index sélection
+				if (array2[indexTrie] < array2[indexSelect]) {
+					indexSelect = indexTrie;
 				}
 			}
 
@@ -49,10 +48,10 @@ public class TriParSelection {
 			int valueSelect = array2[indexSelect];
 
 			// Insertion valeur dans l'index sélection
-			array2[indexSelect] = array2[valeurSource];
+			array2[indexSelect] = array2[indexSource];
 
 			// Ecriture valeur sélection dans tableau sélection
-			trieSelection[valeurSource] = valueSelect;
+			trieSelection[indexSource] = valueSelect;
 		}
 
 		// Affichage tableau de sélection
