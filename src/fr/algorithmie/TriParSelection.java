@@ -31,11 +31,12 @@ public class TriParSelection {
 		 */
 		for (int indexSource = 0; indexSource < array2.length; indexSource++) {
 
-			// Index de sélection
+			// Index du tableau actuel dans indexSelect pour comparaison
 			int indexSelect = indexSource;
 
+			// Recherche du plus petit élément et stockage dans index sélection
 			for (int indexTrie = indexSource + 1; indexTrie < array2.length; indexTrie++) {
-				// Recherche du plus petit élément et stockage dans index sélection
+				
 				if (array2[indexTrie] < array2[indexSelect]) {
 					indexSelect = indexTrie;
 				}
