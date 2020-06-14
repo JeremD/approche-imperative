@@ -19,7 +19,7 @@ public class TriParSelection {
 		// Tableau source
 		int[] array2 = { 3, -8, 17, 5, -1, 4, 0, 6, 2, 11, -5, -4, 8 };
 
-		// Tableau tri par sélection
+		// Tableau tri par sélection de même taille que la source
 		int[] trieSelection = new int[array2.length];
 
 		/*
