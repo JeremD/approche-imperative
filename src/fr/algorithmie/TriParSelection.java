@@ -23,7 +23,7 @@ public class TriParSelection {
 		int[] trieSelection = new int[array2.length];
 
 		/*
-		 * Parcours du tableau
+		 * Parcours du tableau source
 		 * 
 		 * indexActuel -> index première valeur
 		 * 
@@ -43,7 +43,7 @@ public class TriParSelection {
 			}
 
 			/*
-			 * Tri du tableau
+			 * Tri de tableau
 			 */
 			// Elément le plus petit trouvé
 			int valueSelect = array2[indexSelect];
