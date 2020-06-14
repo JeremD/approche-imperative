@@ -19,7 +19,7 @@ public class FirstLast6 {
 	 */
 	public static void main(String[] args) {
 
-		// Tableau d'entier
+		// Tableau d'entiers
 		int[] arrayEntiers = { 5, 23, 4, 6 };
 
 		// Booléen d'analyse du tableau
