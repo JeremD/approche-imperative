@@ -35,7 +35,7 @@ public class TriParSelection {
 			int indexSelect = indexSource;
 
 			for (int indexTrie = indexSource + 1; indexTrie < array2.length; indexTrie++) {
-				// Comparaison des deux valeurs puis sélection de la plus petite dans index sélection
+				// Recherche du plus petit élément et stockage dans index sélection
 				if (array2[indexTrie] < array2[indexSelect]) {
 					indexSelect = indexTrie;
 				}
@@ -44,13 +44,13 @@ public class TriParSelection {
 			/*
 			 * Tri du tableau
 			 */
-			// Valeur comparée précédemment
+			// Elément le plus petit trouvé
 			int valueSelect = array2[indexSelect];
 
-			// Insertion valeur dans l'index sélection
+			// Echange élément actuel du premier tableau avec élément plus petit
 			array2[indexSelect] = array2[indexSource];
 
-			// Ecriture valeur sélection dans tableau sélection
+			// Stockage élément plus petit dans second tableau
 			trieSelection[indexSource] = valueSelect;
 		}
 
