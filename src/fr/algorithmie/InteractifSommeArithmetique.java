@@ -22,15 +22,15 @@ public class InteractifSommeArithmetique {
 		Scanner scanner = new Scanner(System.in);
 		int choixNombre;
 		int sommeNombres = 0;
-		
-		/* Somme entre 1 et le nombre choisi */ 
+
+		/* Somme entre 1 et le nombre choisi */
 		System.out.println("Veuillez choisir un nombre");
 		choixNombre = scanner.nextInt();
-		
+
 		for (int i = 1; i <= 10; i++) {
 			sommeNombres = choixNombre + i;
 		}
-		
+
 		System.out.println(sommeNombres);
 		scanner.close();
 
