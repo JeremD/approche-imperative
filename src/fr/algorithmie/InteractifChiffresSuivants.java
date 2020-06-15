@@ -20,14 +20,14 @@ public class InteractifChiffresSuivants {
 
 		/* Saisie d'un nombre au clavier */
 		Scanner scanner = new Scanner(System.in);
-		int choixNombres;
+		int choixNombre;
 
 		/* Affichage des 10 nombres suivants */ 
 		System.out.println("Veuillez choisir un nombre");
-		choixNombres = scanner.nextInt();
+		choixNombre = scanner.nextInt();
 
 		for (int i = 1; i <= 10; i++) {
-			System.out.print(choixNombres + i + ", ");
+			System.out.print(choixNombre + i + ", ");
 		}
 		scanner.close();
 
