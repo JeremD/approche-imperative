@@ -19,7 +19,7 @@ public class Rotation {
 	public static void main(String[] args) {
 
 		// Tableau d'entiers
-		int arrayEntiers[] = { 0, 1, 2, 3 };
+		int[] arrayEntiers = { 0, 1, 2, 3 };
 
 		// Variable de sélecteur d'index et de sélection de valeur
 		int indexSelect;
