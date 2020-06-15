@@ -24,9 +24,9 @@ public class InteractifPlusGrand {
 		/*
 		 * Choix des 10 nombres
 		 */
+		int choixNombre;
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Veuillez choisir 10 nombres :");
-		int choixNombre;
 
 		// Saisie de chaque nombre
 		for (int i = 0; i < 10; i++) {
