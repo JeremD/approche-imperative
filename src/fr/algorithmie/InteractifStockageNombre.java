@@ -1,6 +1,6 @@
 package fr.algorithmie;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -19,17 +19,15 @@ public class InteractifStockageNombre {
 	 */
 	public static void main(String[] args) {
 
+		// Saisie d'un nombre au clavier, et stockage dans un tableau dynamic
 		int choixUser, choixNombre;
-		int[] arrayNombres = new int[10];
-		int arrayIndex = 0;
-
 		boolean boucleChoix = true;
+		ArrayList<Integer> arrayNombres = new ArrayList<Integer>();
 
-		// Saisie d'un nombre au clavier
 		Scanner scanner = new Scanner(System.in);
-
 		System.out.println("Bienvenu dans le programme !");
 
+		// Boucle infinie
 		while (boucleChoix) {
 			System.out.println("Veuillez choisir une option \r1. Ajouter un nombre	2. Afficher les nombres existants");
 			choixUser = scanner.nextInt();
@@ -37,17 +35,17 @@ public class InteractifStockageNombre {
 			case 1:
 				System.out.println("Choix du nombre : ");
 				choixNombre = scanner.nextInt();
-				arrayNombres[arrayIndex] = choixNombre;
-				arrayIndex++;
+				arrayNombres.add(choixNombre);
 				break;
 			case 2:
-				System.out.println("Résultat des nombres choisis : " + Arrays.toString(arrayNombres));
+				System.out.println("Résultat des nombres choisis : " + (arrayNombres));
 				boucleChoix = false;
 				break;
 			default:
 				break;
 			}
 		}
+		scanner.close();
 
 	}
 
