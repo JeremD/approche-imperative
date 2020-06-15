@@ -20,16 +20,16 @@ public class InteractifTantQue {
 
 		/* Saisie d'un nombre au clavier */
 		Scanner scanner = new Scanner(System.in);
-		int choixNombres;
+		int choixNombre;
 		boolean boucleChoix = true;
 
 		/* Boucle infinie tant que le nombre n'est pas entre 1 et 10 */
 		while (boucleChoix) {
 			System.out.println("Veuillez choisir un nombre entre 1 et 10");
-			choixNombres = scanner.nextInt();
+			choixNombre = scanner.nextInt();
 
-			if ((choixNombres > 0 && choixNombres <= 10)) {
-				System.out.println("Vous avez choisi " + choixNombres);
+			if ((choixNombre > 0 && choixNombre <= 10)) {
+				System.out.println("Vous avez choisi " + choixNombre);
 				boucleChoix = false;
 			}
 		}
